@@ -32,7 +32,7 @@
 		"start:ts": "rollup --config --sourcemap --watch",
 		"start:storybook": "start-storybook --port 3000",
 		"build": "run-s build:*",
-		"build:clean": "rm -rf ./dist/ && mkdir ./dist/",
+		"build:clean": "rd /s dist & mkdir dist",
 		"build:ts": "rollup --config",
 		"test": "tsc --noEmit",
 		"lint:css": "stylelint --ignore-path ./.gitignore --max-warnings 0 \"**/*.{css,sass,scss}\"",
